@@ -15,6 +15,7 @@ public class HelloApplication extends Application {
         stage.setTitle("Prisijungimo langas");
         stage.setScene(scene);
         stage.show();
+        //lol
     }
 
     public static void main(String[] args) {
