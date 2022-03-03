@@ -22,16 +22,16 @@
                <font>
                   <Font name="Segoe UI" size="20.0" />
                </font></Label>
-            <TextField fx:id="username" layoutX="300.0" layoutY="130.0" prefHeight="35.0" prefWidth="184.0" />
-            <Label layoutX="248.0" layoutY="43.0" text="Filmai" textFill="WHITE">
+            <TextField fx:id="loginUsername" layoutX="300.0" layoutY="130.0" prefHeight="35.0" prefWidth="184.0" />
+            <Label layoutX="248.0" layoutY="30.0" text="Filmai" textFill="WHITE">
                <font>
                   <Font name="Segoe UI" size="40.0" />
                </font></Label>
-            <Label fx:id="loginStatus" layoutX="149.0" layoutY="255.0" prefHeight="30.0" prefWidth="398.0" text="Blogai įvestas slaptažodis arba prisijungimo vardas" textFill="#d54949">
+            <Label fx:id="loginStatus" layoutX="134.0" layoutY="255.0" prefHeight="30.0" prefWidth="398.0" textFill="#d54949">
                <font>
                   <Font name="Segoe UI" size="16.0" />
                </font></Label>
-            <PasswordField fx:id="password" layoutX="300.0" layoutY="194.0" prefHeight="35.0" prefWidth="184.0" />
+            <PasswordField fx:id="loginPassword" layoutX="300.0" layoutY="194.0" prefHeight="35.0" prefWidth="184.0" />
             <Button fx:id="login" layoutX="186.0" layoutY="303.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="48.0" prefWidth="97.0" text="Prisijungti">
                <font>
                   <Font name="Segoe UI" size="12.0" />

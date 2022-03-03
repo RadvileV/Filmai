@@ -2,10 +2,43 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.filmai.controller.RegisterController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.filmai.controller.RegisterController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
    <children>
-      <Label layoutX="48.0" layoutY="121.0" text="Registracijos langas" />
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="120.0" layoutY="31.0" text="Naujo vartotojo registracija" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="100.0" text="Prisijungimo vardas:">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font></Label>
+            <Label layoutX="169.0" layoutY="150.0" text="Slaptažodis:">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="179.0" layoutY="204.0" text="El. paštas:">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font></Label>
+            <TextField fx:id="regUsername" layoutX="300.0" layoutY="94.0" prefHeight="35.0" prefWidth="184.0" />
+            <TextField fx:id="regEmail" layoutX="300.0" layoutY="198.0" prefHeight="35.0" prefWidth="184.0" />
+            <PasswordField fx:id="regPassword" layoutX="300.0" layoutY="147.0" prefHeight="35.0" prefWidth="184.0" />
+            <Button fx:id="reffg" layoutX="222.0" layoutY="314.0" mnemonicParsing="false" onAction="#onRegisterButtonForRegistration" prefHeight="47.0" prefWidth="157.0" text="Registruotis" />
+            <Label fx:id="registrationStatus" alignment="CENTER" layoutX="35.0" layoutY="238.0" prefHeight="76.0" prefWidth="543.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children></Pane>
    </children>
-</AnchorPane>
+</GridPane>

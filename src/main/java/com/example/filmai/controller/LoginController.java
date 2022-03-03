@@ -19,20 +19,19 @@ public class LoginController {
     @FXML
     private Label loginStatus;
     @FXML
-    private TextField username;
+    private TextField loginUsername;
     @FXML
-    private PasswordField password;
+    private PasswordField loginPassword;
 
     @FXML
     public void onLoginButtonClick() {
-        String username2 = username.getText();
-        String password2 = password.getText();
-        if (Validation.isValidUsername(username2)) {
-            loginStatus.setText("Teisingai įvestas prisijungimo vardas");
+        String username2 = loginUsername.getText();
+        String password2 = loginPassword.getText();
+        if (Validation.isValidUsername(username2)&&(Validation.isValidPassword(password2))) {
+            loginStatus.setText("Teisingai įvestas prisijungimo vardas ir slaptažodis");
         } else {
-            loginStatus.setText("Klaidingai įvestas prisijungimo vardas");
+            loginStatus.setText("Klaidingai įvestas prisijungimo vardas arba slaptažodis");
         }
-        //loginStatus.setText("Prisijungimo vardas: " + username2 + " " + ", slaptažodis: " + password2);
     }
 
     @FXML
