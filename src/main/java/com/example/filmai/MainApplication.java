@@ -7,15 +7,19 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        //Vaizdo užkrovimas
+        FXMLLoader loginView = new FXMLLoader(MainApplication.class.getResource("login-view.fxml"));
+        //Sukūrimas scenos iš vaizdo
+        Scene scene = new Scene(loginView.load(), 600, 400);
+        //Stage (langas) bus vienas, scenų gali būti daug
         stage.setTitle("Prisijungimo langas");
+        //Langui priskiriama scena
         stage.setScene(scene);
+        //Parodymas lango
         stage.show();
-        //lol
     }
 
     public static void main(String[] args) {
